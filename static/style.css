@@ -1,0 +1,107 @@
+
+.nav_panel{
+    padding-top: 40px;
+    margin: 10px;
+    margin-bottom: 30px;
+    max-width:600px !important;
+    border-bottom: 2px solid teal;    
+}
+.nav_panel .navbar-brand h2 {
+    color: teal !important; 
+}
+.main_container{
+    max-width:600px;
+    background-color: rgba(0, 128, 128, 0.068);
+    margin:10px;
+    padding:20px;
+
+    display:flex;
+    flex-direction: column;
+    color:teal;
+}
+.button {
+width:300px;
+    background-color: rgba(0, 128, 128, 0.445); /* Green */
+    border: none;
+    color: white;
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    border-radius: 5px;
+    margin:5px;
+    font-weight:500;
+  }
+
+.show_result{
+
+width:300px;
+padding:10px;
+font-weight:800;
+font-size:15px;
+color:white;
+background:rgba(0, 128, 128, 0.445);
+ border-radius: 5px;
+}
+
+  .about{
+    margin:10px;
+    margin-top: 50px;
+    padding:20px;
+
+    max-width:600px;
+    background-color: teal;
+    bottom: 0;
+    color:rgb(0, 34, 34);
+  }
+
+
+.myself{
+color:white;
+font-size:12px;
+
+}
+.myself a{
+color:white;
+text-decoration:none;
+}
+
+  #myCanvas{
+      background-color: white;
+  }
+
+.about-image{
+max-width:600px;
+margin-right:10px;
+margin-left:10px;
+}
+.about-image img {
+
+margin-bottom:20px;
+
+}
+.about-app{
+max-width:600px;
+background-color:rgba(0, 128, 128, 0.068);
+color:teal;
+margin-right:10px;
+margin-left:10px;
+padding-top:20px;
+padding-bottom:20px;
+margin-bottom:20px;
+text-align:left;
+}
+.about-app span{
+color:black;
+font-size:15px;
+font-weight:500;
+padding-right:5px;
+}
+.about-app p{
+padding-left:20px;
+padding-right:20px;}
+.about-app img{
+max-width:600px;
+font-size:12px;
+height:auto;}

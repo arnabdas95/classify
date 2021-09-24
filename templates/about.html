@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename = 'style.css')}}">
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Digit Recognizer</title>
+  </head>
+  <body>
+
+<center>
+      <div class="nav_panel">
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="/"><h2>DIGIT RECOGNIZER</h2></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/arnabdas95/Handwritten_Digit_Classifier">Project Link</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </div>
+    <div class="about-image">
+
+    <img src="{{url_for('static', filename='bck.png')}}" class="img-fluid" alt="..."></div>
+
+    <div class="about-app">
+
+        <p><span>Problem:</span>Train a machine learning model to recognize handwritten digit. The digit must be in english.<br><br>
+            <span>Dataset used for training model : </span>
+                    The MNIST database of handwritten digits is used for training the model.
+                    It  has a training set of 60,00 examples, and a test set of 10,00 examples.
+                    It is a subset of a larger set available from NIST. The digits have been size-normalized and centered in a fixed-size image.<br><br>
+            <span>Model Type : </span> K-NearestNeighbour ML model is used for training perpouse.<br><br>
+            <span>What I did : </span> I trained a Machine Learning Model (KNN) and tuned it according to the MNIST dataset.
+            The dataset has 7000 28*28 pixel images of all digits . I trained the model based on the greyscale values of those digits.
+            Then I made a webpage where user can draw digit in a canvas.I take the canvas image resize it into 28*28 ,
+             convert into greyscale.Then converting that image into numpy array and feed it to the train model.
+            After that the model predict the value and show it on web page.<br><br>
+            <span>Conclusion</span> This model is for only educational purpose.The accuracy of that model highly depends on the image size shape and angle .
+        </p>
+    </div>
+</center>
+
+     <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+
+  </body>
+</html>
