@@ -13,8 +13,11 @@ window.addEventListener('load', ()=>{
 
 	resize(); // Resizes the canvas once the window loads
 	document.addEventListener('mousedown', startPainting);
+	document.addEventListener("touchstart",startPainting);
 	document.addEventListener('mouseup', stopPainting);
+	document.addEventListener("touchend",stopPainting);
 	document.addEventListener('mousemove', sketch);
+	document.addEventListener("touchmove",sketch);
 	window.addEventListener('resize', resize);
 });
 
